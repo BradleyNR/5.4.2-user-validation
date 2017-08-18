@@ -1,0 +1,11 @@
+{{#if hasBeenRedirected}}
+<h1>You are not logged in! Please log in</h1>
+{{else}}
+<h1>Please log in!</h1>
+{{/if}}
+
+<form action="/login" method="post">
+  <input type="text" name="username" value="">
+  <input type="password" name="password" value="">
+  <input type="submit" value="Log In">
+</form>
